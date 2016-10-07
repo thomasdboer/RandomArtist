@@ -29,7 +29,6 @@ abstract class RandomShape {
         y = random.nextInt(maxY);
         // initialize to a random color
         //...
-
     }
     
     abstract void draw(Graphics g);

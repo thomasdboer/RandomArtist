@@ -1,20 +1,16 @@
 /**
- * RandomCircle -- part of HA RandomArtist
- * example of a very simple RandomShape
- * @author huub
+ * RandomSquare
+ *
+ * @author Thomas den Boer, Thomas Willems
  */
 
 import java.awt.Graphics;
 
-/**
- *
- * @author huub
- */
-class RandomCircle extends RandomShape {
+class RandomSquare extends RandomShape {
     protected int radius;
     protected boolean fill; //true: filled
 
-    public RandomCircle(int maxX, int maxY) {
+    public RandomSquare(int maxX, int maxY) {
         super(maxX, maxY);
         radius = random.nextInt(maxX/4);
         fill = random.nextBoolean();
@@ -24,8 +20,8 @@ class RandomCircle extends RandomShape {
     void draw(Graphics g) {
         g.setColor(color);
         if (fill)
-            g.fillArc(x, y, radius, radius,0, 360);
+            g.fillRect(x, y, radius, radius);
         else
-            g.drawArc(x, y, radius, radius,0, 360);
+            g.drawRect(x, y, radius, radius);
     }
 }
