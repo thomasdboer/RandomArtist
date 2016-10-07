@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40eec41e-fb08-4174-9df9-7d454dbe2309" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cara.java" afterPath="$PROJECT_DIR$/src/Cara.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RandomShape.java" afterPath="$PROJECT_DIR$/src/RandomShape.java" />
     </list>
     <ignored path="RandomArtist.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -607,16 +605,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1475852830528</updated>
-      <workItem from="1475852832833" duration="2779000" />
+      <workItem from="1475852832833" duration="2850000" />
     </task>
+    <task id="LOCAL-00001" summary="Added first point">
+      <created>1475855996965</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1475855996965</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2779000" />
+    <option name="totallyTimeSpent" value="2850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1931" height="1038" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -655,6 +661,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added first point" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added first point" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
