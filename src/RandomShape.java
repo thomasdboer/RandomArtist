@@ -12,9 +12,11 @@ import java.util.Random;
 abstract class RandomShape {  
     /** random number generator; shared by all RandomShapes */
     static Random random = new Random(); 
-    
+    float r = random.nextFloat();
+    float g = random.nextFloat();
+    float b = random.nextFloat();
     /** color used for drawing this shape **/
-    protected Color color;  
+    protected Color color;
     /** position of the shape (upper left corner) **/
     protected int x, y;  
     
@@ -29,6 +31,7 @@ abstract class RandomShape {
         y = random.nextInt(maxY);
         // initialize to a random color
         //...
+        color = new Color(r,g,b);
     }
     
     abstract void draw(Graphics g);

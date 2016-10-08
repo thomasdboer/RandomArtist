@@ -13,7 +13,9 @@ import javax.swing.*;
 
 public class Cara extends JPanel implements ActionListener {
     Random random = new Random();
-    RandomTree tree = new RandomTree(30, 40);
+    RandomTree tree = new RandomTree(300, 400);
+    RandomSquare square = new RandomSquare(200, 100);
+    RandomCircle circle = new RandomCircle(300,400);
     //...
     ArrayList<RandomShape> randomShapes = new ArrayList<>();
     public Cara() {
@@ -28,7 +30,6 @@ public class Cara extends JPanel implements ActionListener {
         for(RandomShape shape : randomShapes){
             shape.draw(g);
         }
-        g.fillOval(40, 20, 50, 50);
         // ...
     }
 
@@ -44,9 +45,23 @@ public class Cara extends JPanel implements ActionListener {
     public void regenerate() {
         // clear the shapes list
         //...
-
+        randomShapes.clear();
         // create random shapes
         // ...
-        randomShapes.add(tree);
+        int i = 0;
+        int j = 0;
+        int k = 0;
+        while(i < random.nextInt(20)) {
+            randomShapes.add(tree);
+            i++;
+        }
+        while(j < random.nextInt(20)){
+            randomShapes.add(square);
+            j++;
+        }
+        while(k < random.nextInt(20)) {
+            randomShapes.add(circle);
+            k++;
+        }
     }
  }
