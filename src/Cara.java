@@ -16,6 +16,7 @@ public class Cara extends JPanel implements ActionListener {
     
     //...
     ArrayList<RandomShape> randomShapes = new ArrayList<>();
+
     public Cara() {
         setPreferredSize(new Dimension(400,300)); // make panel 400 by 300 pixels
         // ...
@@ -25,11 +26,12 @@ public class Cara extends JPanel implements ActionListener {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);     // clears the background
         // draw all shapes
-        for(RandomShape shape : randomShapes){
+        for(int i = 0; i < randomShapes.size(); i++){
+            RandomShape shape = randomShapes.get(i);
             shape.draw(g);
         }
-        // ...
     }
+        // ...
 
     /**
      * redraws the Cara JPanel, when the button is pressed.
@@ -46,33 +48,35 @@ public class Cara extends JPanel implements ActionListener {
         randomShapes.clear();
         // create random shapes
         // ...
-        RandomTree tree = new RandomTree(300, 400);
-        RandomSquare square = new RandomSquare(200, 100);
-        RandomCircle circle = new RandomCircle(300,400);
-        RandomOval oval = new RandomOval (300,400);
-        RandomRectangle rectangle = new RandomRectangle (300,400);
+
+
         int i = 0;
         int j = 0;
         int k = 0;
         int l = 0;
         int m = 0;
-        while(i < random.nextInt(20)) {
+        while(i < random.nextInt()){
+            RandomTree tree = new RandomTree(400,300);
             randomShapes.add(tree);
             i++;
         }
-        while(j < random.nextInt(20)){
+        while(j < random.nextInt()){
+            RandomSquare square = new RandomSquare(400,300);
             randomShapes.add(square);
             j++;
         }
-        while(k < random.nextInt(20)) {
+        while(k < random.nextInt()) {
+            RandomCircle circle = new RandomCircle(400,300);
             randomShapes.add(circle);
             k++;
         }
-        while(l < random.nextInt(20)) {
+        while(l < random.nextInt()) {
+            RandomOval oval = new RandomOval(400,300);
             randomShapes.add(oval);
             l++;
         }
-        while(m < random.nextInt(20)) {
+        while(m < random.nextInt()) {
+            RandomRectangle rectangle = new RandomRectangle(400,300);
             randomShapes.add(rectangle);
             m++;
         }
