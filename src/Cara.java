@@ -13,9 +13,7 @@ import javax.swing.*;
 
 public class Cara extends JPanel implements ActionListener {
     Random random = new Random();
-    RandomTree tree = new RandomTree(300, 400);
-    RandomSquare square = new RandomSquare(200, 100);
-    RandomCircle circle = new RandomCircle(300,400);
+    
     //...
     ArrayList<RandomShape> randomShapes = new ArrayList<>();
     public Cara() {
@@ -48,9 +46,16 @@ public class Cara extends JPanel implements ActionListener {
         randomShapes.clear();
         // create random shapes
         // ...
+        RandomTree tree = new RandomTree(300, 400);
+        RandomSquare square = new RandomSquare(200, 100);
+        RandomCircle circle = new RandomCircle(300,400);
+        RandomOval oval = new RandomOval (300,400);
+        RandomRectangle rectangle = new RandomRectangle (300,400);
         int i = 0;
         int j = 0;
         int k = 0;
+        int l = 0;
+        int m = 0;
         while(i < random.nextInt(20)) {
             randomShapes.add(tree);
             i++;
@@ -62,6 +67,14 @@ public class Cara extends JPanel implements ActionListener {
         while(k < random.nextInt(20)) {
             randomShapes.add(circle);
             k++;
+        }
+        while(l < random.nextInt(20)) {
+            randomShapes.add(oval);
+            l++;
+        }
+        while(m < random.nextInt(20)) {
+            randomShapes.add(rectangle);
+            m++;
         }
     }
  }
