@@ -49,36 +49,18 @@ public class Cara extends JPanel implements ActionListener {
         // create random shapes
         // ...
 
-
-        int i = 0;
-        int j = 0;
-        int k = 0;
-        int l = 0;
-        int m = 0;
-        while(i < random.nextInt()){
+        
+        for (int i = random.nextInt(30); i > -10; i--) {
             RandomTree tree = new RandomTree(400,300);
             randomShapes.add(tree);
-            i++;
-        }
-        while(j < random.nextInt()){
             RandomSquare square = new RandomSquare(400,300);
             randomShapes.add(square);
-            j++;
-        }
-        while(k < random.nextInt()) {
             RandomCircle circle = new RandomCircle(400,300);
             randomShapes.add(circle);
-            k++;
-        }
-        while(l < random.nextInt()) {
             RandomOval oval = new RandomOval(400,300);
             randomShapes.add(oval);
-            l++;
-        }
-        while(m < random.nextInt()) {
             RandomRectangle rectangle = new RandomRectangle(400,300);
             randomShapes.add(rectangle);
-            m++;
         }
     }
  }
