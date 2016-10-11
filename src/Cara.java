@@ -31,7 +31,6 @@ public class Cara extends JPanel implements ActionListener {
             shape.draw(g);
         }
     }
-        // ...
 
     /**
      * redraws the Cara JPanel, when the button is pressed.
@@ -51,18 +50,9 @@ public class Cara extends JPanel implements ActionListener {
         int x = 400;
         int y = 300;
         for (int i = random.nextInt(30); i > -10; i--) {
-            RandomTree tree = new RandomTree(x,y);
-            randomShapes.add(tree);
-            RandomSquare square = new RandomSquare(x,y);
-            randomShapes.add(square);
-            RandomCircle circle = new RandomCircle(x,y);
-            randomShapes.add(circle);
-            RandomOval oval = new RandomOval(x,y);
-            randomShapes.add(oval);
-            RandomRectangle rectangle = new RandomRectangle(x,y);
-            randomShapes.add(rectangle);
-            RandomTriangle triangle = new RandomTriangle(400,300);
-            randomShapes.add(triangle);
+
+            RandomAbstractFlag flag = new RandomAbstractFlag(x,y);
+            randomShapes.add(flag);
         }
     }
  }
