@@ -50,7 +50,7 @@ public class Cara extends JPanel implements ActionListener {
         // ...
 
         
-        for (int i = random.nextInt(30); i > -10; i--) {
+        for (int i = random.nextInt(6); i > -2; i--) {
             RandomTree tree = new RandomTree(400,300);
             randomShapes.add(tree);
             RandomSquare square = new RandomSquare(400,300);
