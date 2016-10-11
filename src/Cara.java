@@ -48,18 +48,18 @@ public class Cara extends JPanel implements ActionListener {
         randomShapes.clear();
         // create random shapes
         // ...
-
-        
-        for (int i = random.nextInt(6); i > -2; i--) {
-            RandomTree tree = new RandomTree(400,300);
+        int x = 400;
+        int y = 300;
+        for (int i = random.nextInt(30); i > -10; i--) {
+            RandomTree tree = new RandomTree(x,y);
             randomShapes.add(tree);
-            RandomSquare square = new RandomSquare(400,300);
+            RandomSquare square = new RandomSquare(x,y);
             randomShapes.add(square);
-            RandomCircle circle = new RandomCircle(400,300);
+            RandomCircle circle = new RandomCircle(x,y);
             randomShapes.add(circle);
-            RandomOval oval = new RandomOval(400,300);
+            RandomOval oval = new RandomOval(x,y);
             randomShapes.add(oval);
-            RandomRectangle rectangle = new RandomRectangle(400,300);
+            RandomRectangle rectangle = new RandomRectangle(x,y);
             randomShapes.add(rectangle);
         }
     }
