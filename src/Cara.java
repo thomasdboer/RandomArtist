@@ -61,6 +61,8 @@ public class Cara extends JPanel implements ActionListener {
             randomShapes.add(oval);
             RandomRectangle rectangle = new RandomRectangle(x,y);
             randomShapes.add(rectangle);
+            RandomTriangle triangle = new RandomTriangle(400,300);
+            randomShapes.add(triangle);
         }
     }
  }
